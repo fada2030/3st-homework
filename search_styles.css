@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    cursor: pointer;
+}
+
+ol,ul,li{
+    list-style: none;
+}
+
+/* Header Start */
+
+.header{
+    background-color: #02A28F;
+    padding: 13px 0;
+}
+
+.header_row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_navbar{
+    display: flex;
+    gap: 20px;
+}
+
+.header_link{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #fff;
+    transition: all 0.1s ease-in-out;
+}
+
+.header_link:hover{
+    color: #D9D9D9;
+}
+
+.header_button{
+    background-color: transparent;
+    border: none;
+}
+
+.header_button svg path{
+    transition: 0.1s ease-in-out;
+}
+
+.header_button:hover svg path{
+    fill: #D9D9D9;
+}
+
+/* Header End */
+
+/* Main Start */
+
+.main{
+    position: relative;
+    display: flex;
+    margin: 50px 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.main_row{
+    display: flex;
+    gap: 24px;
+}
+
+.aside{
+    width: 66%;
+}
+
+.sidebar{
+    width: 32%;
+}
+
+/* Title Start */
+
+.title{
+    background-color: #02A28F;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+}
+
+.title_title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.widthlink{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.title_link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    transition: all 0.1s;
+}
+
+.title_link:hover{
+    color: #D9D9D9;
+}
+
+/* Title End */
+
+/* Posts Start*/
+
+.posts{
+    position: relative;
+    margin-top: 24px;
+}
+
+.posts_row{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.posts_card{
+    width: calc(50% - 12px);
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card_content{
+    padding: 13px 13px 40px 13px;
+}
+
+.card_image{
+    width: 100%;
+    height: 190px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+.card_title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin: 2px 0;
+}
+
+.card_desc{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    margin: 14px 0;
+}
+
+.card_date{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #616161;
+}
+
+.card_subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.card_subtitle-green{
+    color: #02A28F;
+}
+
+.card_subtitle-gray{
+    color: #616161;
+}
+
+/* Posts End*/
+
+/* Actual Start */
+
+.actual{
+    margin-top: 20px; 
+}
+
+.actual_block{
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 23px;
+}
+
+.actual_image{
+    display: block;
+    width: 40%;
+    height: 70px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+
+.actual_title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.actual-date{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #616161;
+}
+
+/* Actual End */
+
+/* Category Start */
+
+.category{
+    margin-top: 24px;
+}
+
+.category_txt{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #616161;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+/* Category End */
+
+/* Main End */
+
+/* Footer Start */
+
+.footer{
+    background-color: #02A28F;
+    padding: 17px 0;
+}
+
+.footer_txt{
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+}
+
+/* Footer End */
